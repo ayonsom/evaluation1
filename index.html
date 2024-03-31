@@ -6,17 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #ch1{
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+        #ch1 {
             background: url("https://s3-alpha-sig.figma.com/img/894b/df6e/56b90bbef82ad188765f40d12a46caef?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=U0pPaOMWXR-t72pP3ftgjHJXWtponYsJrenQMv37s4za-g12WmsVx462srUk-VxD8hYPdllQsMQNwL-5l8gdFfYKkIJN8BXmdRgw8sC~WGGVDhLa-lNqS8gu5wSL9JuBwqlowKRSop5T2-52ouVY7JKQwn60O4ep5ui~Iwzp9oJ9RqAzvCuuSuyaB9WnIVauKab6Wn6She-aR7YM2yGgsdsxI8ew~dKEJTQOlfr1fXJkbEoxsk7F9CTgzobgvxEoOSL-yNdvL7Z8p83kFFDPgMbY4MeP7q6Sq4jetVcjVMyYai6AARWuygeEWX~wAc5j5S9NKUYyLcR1Jlf0Mw4t5w__") no-repeat;
             background-size: cover;
-            height: 588px;
+            /* height: 588px; */
+            font-family: ZCOOL KuaiLe;
+            /* margin-top: 0px; */
+            /* border: 2px solid green; */
+            padding-top: 10px;
+            background-position: center;
         }
+
         #nav {
-            height: 400px;
+            /* border: 2px solid; */
+            height: 270px;
             display: flex;
             justify-content: space-around;
             margin-top: 50px;
-           
+
         }
 
         #saviour {
@@ -40,7 +51,7 @@
             display: flex;
             justify-content: space-between;
             padding: 8px 30px;
-            background-color: black;
+            background-color: #191818;
             color: white;
             border-radius: 14px;
             align-items: center;
@@ -63,55 +74,246 @@
             background: linear-gradient(93.73deg, #D51B46 10.19%, #EE6910 98.19%);
             border-radius: 12px;
         }
-        .navtext{
-            text-align: center;
+
+        .navtext {
+            /* text-align: center;
             color: white;
             margin-bottom: 170px;
+            font-family: shojumaru;
+            font-family: Shojumaru; */
+            color: white;
+            font-size: 45px;
+            font-weight: 400;
+            line-height: 53.55px;
+            text-align: center;
+
+
         }
-        #ch2{
+
+        #ch2 {
             /* height: max-conten; */
+            /* border: 3px solid yellow; */
             width: 100%;
+            min-height: max-content;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             gap: 50px;
             margin: 0 30px;
-            height: 588px;
-            background-color: black;
+            height: 400px;
+            background-color: rgb(25, 24, 24);
+            margin-left: 0px;
+
         }
-        #right{
+        #container{
+            background-color: rgba(0, 0, 0, 0.897);
+            margin-top: -10px;
+            margin-left: -10px;
+        }
+        #right {
             width: 50%;
             height: 100%;
         }
-        #ch2 img{
-            width: 100%;
-            height: 100%;
+
+        #imgdiv {
+            height: 400px;
+            height: 400px;
+            padding-left: 30px;
         }
-        
-        #left{
+
+        #ch2 img {
+            width: 450px;
+            height: auto;
+            margin-top: -30px;
+        }
+
+        #left {
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
             width: 50%;
             height: 100%;
+            padding-left: 130px;
+
         }
-        #left ul{
-            color: red;
+
+        #left ul {
+            color: #ED0137;
             font-size: 30px;
-            
+            font-family: shojumaru;
+
         }
-        #left li{
+
+        #left li {
             margin-top: 30px;
             font-size: 18px;
             list-style-type: none;
             color: white;
+            font-family: ZCOOL KuaiLe;
         }
-       #btn{
+
+        #btn {
+            color: white;
             padding: 10px 15px;
             width: 100px;
             background: linear-gradient(93.73deg, #D51B46 10.19%, #EE6910 98.19%);
             margin-left: 40px;
             border-radius: 12px;
-       }
+            border: none;
+            font-family: ZCOOL KuaiLe;
+
+        }
+
+        #ch3 {
+            /* background-color: rgb(75, 73, 73); */
+            background: url(https://s3-alpha-sig.figma.com/img/7fb8/c9c7/2e63edc105c3925cfa651946f437c2fd?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pAGxyyrb1oJ0D8VmYEwIuaaJ7VDqdALNGT4PGHE0nVODxcf57LqgD-n5qAfVJ2OuyUQDu7NZyXXx-0Q5Z0cra055u1FKDKhM3p72i9D2pw3~jEGZX31MPbmdipH~YJC5gIHmswbiLpkV2sgldRN4E7sgdK5kACSJBTzjfOVMzCJINoKFeA1~YBbrJJlAa3aVPi1NxjU1JfdvF1jON1RaCM4A-0wCOXBnOuj75vIwp9BsN6GINmM4on0C2aKUJ1R60BOd7hasaciyTeW0HLP5pYkWZ6c1n2Aaej4oPaeNBbsW6SC5Rhps1huvml3FD3PRYTDw1rnSNdBwpyWSyzu79Q__) no-repeat;
+            background-position: center;
+            opacity: 100%;
+
+        }
+
+        #ch3main {
+            /* height: max-conten; */
+            /* display: flex; */
+
+            /* border: 3px solid yellow; */
+            width: 100%;
+            min-height: max-content;
+            /* display: flex; */
+            justify-content: space-around;
+            gap: 50px;
+            margin: 0 30px;
+            height: 550px;
+            background-color: black;
+            opacity: 88%;
+            margin-left: 0px;
+
+        }
+
+        #ch3main-top {
+            /* background-color: transparent; */
+            margin-top: 40px;
+            display: flex;
+            font-family: shojumaru;
+            /* opacity: 100%; */
+            color: #ED0137;
+            /* font-size: 44px; */
+            justify-content: center;
+
+        }
+
+        #ch3main-botttom {
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: center;
+        }
+
+        #player-card {
+            /* border: 2px solid white; */
+            max-width: 800px;
+            height: auto;
+            margin-top: 60px;
+        }
+
+        /* #ch3main-botttom>div{
+            border: 1px solid #EE6910;
+            width: 210.06px;
+            height: 300px;
+            margin: 10px;
+            border-radius: 13.17px;
+            opacity: 0px;
+
+        } */
+        #ch4 {
+            background-color: rgb(25, 24, 24);
+            display: flex;
+            color: white;
+            padding-bottom: 150px;
+        }
+
+        #ch4-img {
+            width: 400px;
+            margin-left: 300px;
+        }
+
+        #ch4-menu {
+            font-family: Shojumaru;
+            margin-left: 100px;
+        }
+
+        #ch4-menu div~div {
+            border: 1px solid red;
+            margin: 10px;
+            border-radius: 13px;
+            padding: 15px;
+            padding-left: 20px;
+            padding-right: 30px;
+        }
+
+        #ch4-menu>div H1 {
+            color: #ED0137;
+        }
+
+        #ch4-menu>div>input {
+            font-family: ZCOOL KuaiLe;
+            width: 300px;
+            height: 25px;
+            padding: 30px;
+            background-color: grey;
+            color: white;
+            border-radius: 12px;
+           
+
+        }
+
+        /* #ch4-menu>div>input::placeholder {
+            color: white;
+        } */
+        ::placeholder{
+            color: white;
+            font-size: 14px;
+            text-wrap: wrap;
+            position: absolute;
+            top: 30%;
+    
+        }
+
+        #ch4-menu-ch1 {
+            text-align: center;
+        }
+
+        #ch5 {
+            background-color: rgb(10, 2, 2);
+        }
+
+        #ch5-img {
+            text-align: center;
+            color: #D51B46;
+        }
+
+        #ch5-img>h3 {
+            text-align: center;
+            color: #D51B46;
+            margin-top: -50px;
+            font-family: poppins;
+        }
+
+        #ch5-img>img {
+            width: 180px;
+            /* margin-bottom: -30PX; */
+            /* margin-top: -50px; */
+        }
+        #ch5-img>div{
+            text-align: center;
+        }
+        #last{
+            color: white;
+            display: flex;
+            justify-content: center;
+
+        }
+        #last>h5{
+            margin: 10px;
+        }
     </style>
 </head>
 
@@ -138,33 +340,99 @@
             </div>
             <div class="navtext">
                 <p>Where Blockchain Heroes Thrive, Rescuing <br> Dreams, Elevating Fortunes.</p>
-            
+
             </div>
         </div>
         <div id="ch2">
             <div id="left">
                 <ul>
                     INTRODUCTION
-                    
+
                     <li>
-                        We've all been in the mud once, and now we've decided to fight it out. 
-                        Pay tribute to those pioneers of WEB3 and the warriors who dedicated their love to the blockchain. Save the lucky ones alive, join us to save the future! 
-                        Our mission is to empower everyone to share wealth and succeed. 
+                        We've all been in the mud once, and now we've decided to fight it out.
+                        Pay tribute to those pioneers of WEB3 and the warriors who dedicated their love to the
+                        blockchain. Save the lucky ones alive, join us to save the future!
+                        Our mission is to empower everyone to share wealth and succeed.
                         read more...
-                   </li>
+                    </li>
                 </ul>
                 <button id="btn">Documents</button>
-                
+
             </div>
             <div id="right">
-                <div >
-                    <img src="https://s3-alpha-sig.figma.com/img/72d9/2d64/713f95c34c945a62844515044f63fcd4?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dy6gWAVwYliawleJchb7RBisKJjz-~g1x5ZQXX494TEl0ccOk3KSgnf9hGEvLfSHX4~EyQKPn07jB0Lp-YEh3qBdOXQsUfDP3HM3a~HAbVQ7GDjb4LbxygWHDfTIn9lScZyrBIcv6yphV9PpqLwM9HEBtPpI9dFLdlDU~5T2ImvCU~OI4Nh7vI6fgslwJlLTpjkmoF2zU3VFP-XeHNlbuwQmpDZI8lgIwzEc~dB9EaxEKRv~MBy1aS3XstcjmWS~IfrZvVH1J7rMTEkcNxwmR77fE-XcKgQAxFThgPLipp8bDZwQDMteW90zDSbP6ne9TxCo15dv6oUZFEiNlSPDLA__" alt="">
-                 </div>
+                <div id="imgdiv">
+                    <img src="https://s3-alpha-sig.figma.com/img/72d9/2d64/713f95c34c945a62844515044f63fcd4?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dy6gWAVwYliawleJchb7RBisKJjz-~g1x5ZQXX494TEl0ccOk3KSgnf9hGEvLfSHX4~EyQKPn07jB0Lp-YEh3qBdOXQsUfDP3HM3a~HAbVQ7GDjb4LbxygWHDfTIn9lScZyrBIcv6yphV9PpqLwM9HEBtPpI9dFLdlDU~5T2ImvCU~OI4Nh7vI6fgslwJlLTpjkmoF2zU3VFP-XeHNlbuwQmpDZI8lgIwzEc~dB9EaxEKRv~MBy1aS3XstcjmWS~IfrZvVH1J7rMTEkcNxwmR77fE-XcKgQAxFThgPLipp8bDZwQDMteW90zDSbP6ne9TxCo15dv6oUZFEiNlSPDLA__"
+                        alt="">
+                </div>
             </div>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="ch3">
+            <div id="ch3main">
+                <div id="ch3main-top">
+                    <h1>Road Map</h1>
+                </div>
+
+                <br>
+                <div id="ch3main-botttom">
+                    <div>
+                        <img id="player-card" src="./Frame 1815.png" alt="player cards">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="ch4">
+            <div>
+                <img id="ch4-img"
+                    src="https://s3-alpha-sig.figma.com/img/7624/956b/bb5893d955ab92e34ab86102a42d6d23?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HgV7vT5TT5nd2W8dk5fNRnM3OPBgds9BiAc7m-NIVeGxFgTTtA7WWQ5ZMckoDDCDhGteotOk-OWZwcLCIDFzVheYJmOyp5~51Fcw3UAQ4z3-xxLScEb9~Q30wiPNmNC8YFHzUXIhB4fbkO9HYJT5GOHc4xfYuks9r2oacXg0wp8EP2G5I0DGGmaQGFpOUFOFgIm1~2meb966vEb5iil6nsV6DPofAYjwd~BZfxT0Keo4vF81Awkae4rqMbR94Zf0zOMFHTC-Pwau3dMlcHGrhKQ98mUljm6YoDx0uQ6zBOcjiu3F94tQom97V8YmNSh3oB3OBwg8TAiBbjFFNNMMdg__"
+                    alt="">
+            </div>
+            <div id="ch4-menu">
+
+                <div id="ch4-menu-ch1">
+                    <H1>FAQ</H1>
+                </div>
+                <div>
+                    <P>1 Why chose "Savior"?</P>
+                </div>
+                <div>
+                    <p>2 Why is the IDO duration so long?</p>
+                </div>
+                <div>
+                    <p>3 When will trading go live?</p>
+                </div>
+                <div>
+                    <p>4 When can we claim the tokens?</p>
+                    <input type="text" placeholder="After the IDO concludes, you can claim the tokens on our official website.
+                    ">
+                </div>
+            </div>
+        </div>
+        <div id="ch5">
+            <div id="ch5-img">
+                <img src="https://s3-alpha-sig.figma.com/img/79e0/db14/6de61e6b7e512045a7cc5fab1681c6dc?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cpsJ9ujNNmUxLskfs8GDymYzW08fZbPn4MpECcoiM7MzoPM1sX74jPoZaz0Jc-x9e6trrl4SgYckZ8ASbS2GryqzTstLgcQdiGR~PjwNjuvwhdkf1qVyFTNoFbXVm6Mu7wOBW5iv~Xiq8~GcRx9Ut-2CHs7s5uqZGup5LqYvrSuYoC-dBSLEZNedJqqi1WZmRvQRNLYtvWQarHdnpazCqwDwGP0yiDR7M7ipkW6u-xlY5KqsI7~JRcvHfmtYbpCycCn2Gji2z8Q57R0VB68DJ14KqqRb8w0NTd0VUW4ZHgS78IoTJ2tPCGtNbuGQejRjJqxBYaA1zSIJLoMwsljoKQ__"
+                    alt="">
+                <h3>SITEMAP</h3>
+                <div>
+                    <div id="last">
+                        <h5>Home</h5>
+                        <h5>IDO</h5>
+                        <h5>Tokenomics</h5>
+                        <h5>Road Map</h5>
+                        <h5>White Paper</h5>
+                        <h5>Pledge</h5>
+                        <h5>NFT</h5>
+                        <h5>Games</h5>
+                        
+                        
+                    </div>
+                    <br>
+                    <div>
+                        <img src="./Frame 1825.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
